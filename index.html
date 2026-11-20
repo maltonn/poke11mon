@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポケ11問！ - あなたの思い浮かべたポケモンを当てます！</title>
+  <meta name="description" content="11回の質問であなたの考えているポケモンを当てます！全1,025匹（第1世代〜第9世代）対応・登録不要。">
+  <link rel="icon" type="image/png" href="icon.png">
+
+  <!-- OGP / Open Graph Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://maltonn.github.io/poke11mon/">
+  <meta property="og:title" content="ポケ11問！ - あなたの思い浮かべたポケモンを当てます！">
+  <meta property="og:description" content="11回の質問であなたの考えているポケモンを当てます！全1,025匹（第1世代〜第9世代）対応・登録不要。">
+  <meta property="og:image" content="https://maltonn.github.io/poke11mon/thumbnail.png">
+  <meta property="og:site_name" content="ポケ11問！">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://maltonn.github.io/poke11mon/">
+  <meta name="twitter:title" content="ポケ11問！ - あなたの思い浮かべたポケモンを当てます！">
+  <meta name="twitter:description" content="11回の質問であなたの考えているポケモンを当てます！全1,025匹（第1世代〜第9世代）対応・登録不要。">
+  <meta name="twitter:image" content="https://maltonn.github.io/poke11mon/thumbnail.png">
+  <!-- Google Fonts: Zen Maru Gothic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app-container">
+    <!-- ヘッダー -->
+    <header class="app-header">
+      <div class="logo">
+        <span class="logo-text">ポケ11問！</span>
+      </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="app-main">
+      <!-- 1. TOP画面 -->
+      <section id="screen-top" class="screen active">
+        <div class="hero-card">
+          <h1 class="hero-title">ポケ11問！</h1>
+
+          <p class="hero-desc">
+            11回の質問であなたの考えている<br>ポケモンを当てます！<br><br>
+            すきなポケモンを1匹だけ<br>心の中に思い浮かべてね！
+          </p>
+          <div class="hero-notes">
+            <span>※第1世代〜第9世代（全1,025種）対応</span>
+          </div>
+
+          <button id="btn-start" class="btn btn-primary btn-large">
+            <span>はじめる！</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- 2. 質問画面 -->
+      <section id="screen-quiz" class="screen">
+        <!-- プログレスバー -->
+        <div class="quiz-header">
+          <div class="quiz-step-info">
+            <span class="step-label">質問</span>
+            <span id="quiz-step-num" class="step-current">1</span>
+            <span class="step-total">/ 11</span>
+          </div>
+          <div class="progress-bar-container">
+            <div id="quiz-progress-bar" class="progress-bar-fill" style="width: 9%;"></div>
+          </div>
+        </div>
+
+        <!-- 質問カードエリア -->
+        <div class="card-stage">
+          <div id="question-card" class="question-card">
+            <div class="card-meta">
+              <span id="card-candidates" class="candidates-badge">残り 1025匹</span>
+            </div>
+            <div class="card-body">
+              <p id="card-question-text" class="question-text">質問文がここに表示されます</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- アクションボタン -->
+        <div class="quiz-actions">
+          <button id="btn-yes" class="btn btn-yes btn-action">
+            <span class="btn-icon icon-circle"></span>
+            <span class="btn-label">はい</span>
+          </button>
+          <button id="btn-no" class="btn btn-no btn-action">
+            <span class="btn-icon icon-cross"></span>
+            <span class="btn-label">いいえ</span>
+          </button>
+        </div>
+
+        <!-- 戻るボタン -->
+        <div class="quiz-footer">
+          <button id="btn-undo" class="btn-text" disabled>
+            <span>↩ 1つ前の質問に戻る</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- 3. 結果画面 -->
+      <section id="screen-result" class="screen">
+        <div class="result-card">
+          <div class="result-badge">推測完了！</div>
+          <h2 class="result-lead">あなたが思い浮かべていたのは...</h2>
+
+          <div class="pokemon-display">
+            <div id="result-pokemon-id" class="pokemon-id-badge">No.0000</div>
+            <h1 id="result-pokemon-name" class="pokemon-name">ポケモン名</h1>
+            <div id="result-pokemon-types" class="pokemon-types">
+              <!-- タイプバッジが動的に入る -->
+            </div>
+            <a id="result-zukan-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-zukan-link">
+              <span>📖 公式ポケモンずかんで見る ↗</span>
+            </a>
+          </div>
+
+          <!-- フィードバックエリア（初期状態） -->
+          <div id="feedback-initial" class="feedback-block">
+            <p class="feedback-prompt">あたっていましたか？</p>
+            <div class="feedback-buttons">
+              <button id="btn-correct" class="btn btn-yes btn-large">
+                <span>🎉 あってた！</span>
+              </button>
+              <button id="btn-wrong" class="btn btn-subtle btn-large">
+                <span>🤔 違った...</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 「あってた！」選択後のエリア -->
+          <div id="feedback-correct-view" class="feedback-block" style="display: none;">
+            <p class="celebrate-text">やったー！当てることができました！✨</p>
+            <div class="share-actions">
+              <button id="btn-share" class="btn btn-share btn-large">
+                <span class="x-icon">𝕏</span>
+                <span>で結果をポストする</span>
+              </button>
+              <button id="btn-restart-from-success" class="btn btn-primary btn-outline">
+                <span>もう一度あそぶ</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 「違った...」選択後のエリア -->
+          <div id="feedback-wrong-view" class="feedback-block" style="display: none;">
+            <p class="apology-text">ざんねん…！<br>本当はどのポケモンを思い浮かべていましたか？</p>
+            <form id="form-actual-pokemon" class="feedback-form">
+              <input type="text" id="input-actual-pokemon" list="pokemon-list-datalist" placeholder="例：ゲンガー" required
+                class="input-text" autocomplete="off">
+              <datalist id="pokemon-list-datalist"></datalist>
+              <button type="submit" class="btn btn-primary">
+                <span>送信する</span>
+              </button>
+            </form>
+            <div id="feedback-sent-msg" class="feedback-thanks" style="display:none;">
+              <span>教えてくれてありがとうございます！次は当てられるように頑張ります！💪</span>
+            </div>
+            <div class="restart-wrapper">
+              <button id="btn-restart-from-wrong" class="btn btn-primary btn-outline">
+                <span>もう一度あそぶ</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 質問履歴トグル & リスト -->
+          <div class="history-accordion">
+            <button id="btn-toggle-history" class="btn-accordion">
+              <span>これまでの質問と回答を見る（<span id="history-count">0</span>問）</span>
+              <span class="accordion-arrow">▼</span>
+            </button>
+            <div id="history-content" class="history-content" style="display: none;">
+              <ul id="history-list" class="history-list">
+                <!-- 動的に生成 -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- フッター & ライセンス -->
+    <footer class="app-footer">
+      <p class="footer-license">
+        ポケットモンスター・ポケモン・Pokémonは任天堂・クリーチャーズ・ゲームフリークの登録商標です。<br>
+        本サービスはファンメイド作品であり、任天堂・株式会社ポケモンとは一切関係ありません。<br>
+        データは <a href="https://pokeapi.co/" target="_blank" rel="noopener">PokéAPI</a> を利用しています。
+      </p>
+    </footer>
+  </div>
+
+  <!-- 決定木データ読み込み -->
+  <script src="data/tree.js"></script>
+  <!-- アプリ本体JS -->
+  <script src="app.js"></script>
+</body>
+
+</html>

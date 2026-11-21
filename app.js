@@ -109,7 +109,7 @@
       treeData = window.TREE_DATA;
     } else {
       try {
-        const res = await fetch('data/tree.json?v=20261121_1');
+        const res = await fetch('data/tree.json?v=20261121_5');
         treeData = await res.json();
       } catch (err) {
         console.error('Failed to load tree data:', err);
@@ -118,12 +118,25 @@
       }
     }
 
+    // フロントエンド用パッチ（お茶モチーフポケモン等の誤認を防ぐため「茶」を「茶色」に変更）
+    patchTreeData(treeData);
+
     // 全ポケモン名の抽出（オートコンプリート用）
     extractPokemonNames(treeData);
     populateDatalist();
 
     // イベントリスナーの登録
     bindEvents();
+  }
+
+  function patchTreeData(node) {
+    if (!node) return;
+    if (node.question_text) {
+      // お茶モチーフポケモン（ヤバチャ等）と混同しないよう「茶色」に変更
+      node.question_text = node.question_text.replace(/「茶」ですか/g, '「茶色」ですか');
+    }
+    if (node.yes) patchTreeData(node.yes);
+    if (node.no) patchTreeData(node.no);
   }
 
   function extractPokemonNames(node) {

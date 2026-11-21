@@ -409,18 +409,18 @@
                     "node_id": 41,
                     "type": "question",
                     "depth": 9,
-                    "question_id": "q11_weight_257_256",
-                    "question_text": "おもさが 52.0kg 以上ですか？",
-                    "tier": 2,
-                    "category": "サイズ・体格",
+                    "question_id": "q11_can_evolve_256_257",
+                    "question_text": "これ以上進化できますか？",
+                    "tier": 1,
+                    "category": "進化",
                     "candidates_count": 2,
                     "yes": {
                       "node_id": 42,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 257,
-                        "name_ja": "バシャーモ",
+                        "id": 256,
+                        "name_ja": "ワカシャモ",
                         "type1": "炎",
                         "type2": "格闘"
                       }
@@ -430,8 +430,8 @@
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 256,
-                        "name_ja": "ワカシャモ",
+                        "id": 257,
+                        "name_ja": "バシャーモ",
                         "type1": "炎",
                         "type2": "格闘"
                       }
@@ -1250,18 +1250,18 @@
                     "node_id": 121,
                     "type": "question",
                     "depth": 9,
-                    "question_id": "q11_weight_923_922",
-                    "question_text": "おもさが 41.0kg 以上ですか？",
-                    "tier": 2,
-                    "category": "サイズ・体格",
+                    "question_id": "q11_can_evolve_922_923",
+                    "question_text": "これ以上進化できますか？",
+                    "tier": 1,
+                    "category": "進化",
                     "candidates_count": 2,
                     "yes": {
                       "node_id": 122,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 923,
-                        "name_ja": "パーモット",
+                        "id": 922,
+                        "name_ja": "パモット",
                         "type1": "電気",
                         "type2": "格闘"
                       }
@@ -1271,8 +1271,8 @@
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 922,
-                        "name_ja": "パモット",
+                        "id": 923,
+                        "name_ja": "パーモット",
                         "type1": "電気",
                         "type2": "格闘"
                       }
@@ -1394,7 +1394,7 @@
           "type": "question",
           "depth": 4,
           "question_id": "vibe_famous",
-          "question_text": "アニメやグッズ等でよく見かける「有名枠」ですか？",
+          "question_text": "アニメやグッズ等でよく見かける「超有名枠」ですか？",
           "tier": 2,
           "category": "雰囲気・キャラ性",
           "candidates_count": 65,
@@ -2007,18 +2007,18 @@
                     "node_id": 193,
                     "type": "question",
                     "depth": 9,
-                    "question_id": "q11_weight_26_25",
-                    "question_text": "おもさが 30.0kg 以上ですか？",
-                    "tier": 2,
-                    "category": "サイズ・体格",
+                    "question_id": "q11_can_evolve_25_26",
+                    "question_text": "これ以上進化できますか？",
+                    "tier": 1,
+                    "category": "進化",
                     "candidates_count": 2,
                     "yes": {
                       "node_id": 194,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 26,
-                        "name_ja": "ライチュウ",
+                        "id": 25,
+                        "name_ja": "ピカチュウ",
                         "type1": "電気",
                         "type2": null
                       }
@@ -2028,8 +2028,8 @@
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 25,
-                        "name_ja": "ピカチュウ",
+                        "id": 26,
+                        "name_ja": "ライチュウ",
                         "type1": "電気",
                         "type2": null
                       }
@@ -2185,18 +2185,18 @@
                     "node_id": 210,
                     "type": "question",
                     "depth": 9,
-                    "question_id": "q11_weight_998_997",
-                    "question_text": "おもさが 210.0kg 以上ですか？",
-                    "tier": 2,
-                    "category": "サイズ・体格",
+                    "question_id": "q11_can_evolve_997_998",
+                    "question_text": "これ以上進化できますか？",
+                    "tier": 1,
+                    "category": "進化",
                     "candidates_count": 2,
                     "yes": {
                       "node_id": 211,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 998,
-                        "name_ja": "セグレイブ",
+                        "id": 997,
+                        "name_ja": "セゴール",
                         "type1": "ドラゴン",
                         "type2": "氷"
                       }
@@ -2206,8 +2206,8 @@
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 997,
-                        "name_ja": "セゴール",
+                        "id": 998,
+                        "name_ja": "セグレイブ",
                         "type1": "ドラゴン",
                         "type2": "氷"
                       }
@@ -3256,18 +3256,18 @@
                     "node_id": 312,
                     "type": "question",
                     "depth": 9,
-                    "question_id": "q11_weight_154_153",
-                    "question_text": "おもさが 100.5kg 以上ですか？",
-                    "tier": 2,
-                    "category": "サイズ・体格",
+                    "question_id": "q11_can_evolve_153_154",
+                    "question_text": "これ以上進化できますか？",
+                    "tier": 1,
+                    "category": "進化",
                     "candidates_count": 2,
                     "yes": {
                       "node_id": 313,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 154,
-                        "name_ja": "メガニウム",
+                        "id": 153,
+                        "name_ja": "ベイリーフ",
                         "type1": "草",
                         "type2": null
                       }
@@ -3277,8 +3277,8 @@
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 153,
-                        "name_ja": "ベイリーフ",
+                        "id": 154,
+                        "name_ja": "メガニウム",
                         "type1": "草",
                         "type2": null
                       }
@@ -8823,7 +8823,7 @@
                     "type": "question",
                     "depth": 9,
                     "question_id": "color_is_brown",
-                    "question_text": "体の大部分が「茶」ですか？",
+                    "question_text": "体の大部分が「茶色」ですか？",
                     "tier": 1,
                     "category": "色・配色",
                     "candidates_count": 3,
@@ -9325,7 +9325,7 @@
                       "type": "question",
                       "depth": 10,
                       "question_id": "q11_type_984_1021",
-                      "question_text": "「かくとう」タイプを持っていますか？",
+                      "question_text": "「じめん」タイプを持っていますか？",
                       "tier": 1,
                       "category": "タイプ",
                       "candidates_count": 2,
@@ -11763,7 +11763,7 @@
                   "type": "question",
                   "depth": 8,
                   "question_id": "color_is_brown",
-                  "question_text": "体の大部分が「茶」ですか？",
+                  "question_text": "体の大部分が「茶色」ですか？",
                   "tier": 1,
                   "category": "色・配色",
                   "candidates_count": 3,
@@ -14543,18 +14543,18 @@
                     "node_id": 1635,
                     "type": "question",
                     "depth": 9,
-                    "question_id": "q11_weight_39_174",
-                    "question_text": "おもさが 5.5kg 以上ですか？",
-                    "tier": 2,
-                    "category": "サイズ・体格",
+                    "question_id": "q11_first_stage_174_39",
+                    "question_text": "「たねポケモン」（進化前の最初の姿）ですか？",
+                    "tier": 1,
+                    "category": "進化",
                     "candidates_count": 2,
                     "yes": {
                       "node_id": 1636,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 39,
-                        "name_ja": "プリン",
+                        "id": 174,
+                        "name_ja": "ププリン",
                         "type1": "ノーマル",
                         "type2": "フェアリー"
                       }
@@ -14564,8 +14564,8 @@
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 174,
-                        "name_ja": "ププリン",
+                        "id": 39,
+                        "name_ja": "プリン",
                         "type1": "ノーマル",
                         "type2": "フェアリー"
                       }
@@ -14680,18 +14680,18 @@
                     "node_id": 1648,
                     "type": "question",
                     "depth": 9,
-                    "question_id": "q11_weight_281_280",
-                    "question_text": "おもさが 20.2kg 以上ですか？",
-                    "tier": 2,
-                    "category": "サイズ・体格",
+                    "question_id": "q11_first_stage_280_281",
+                    "question_text": "「たねポケモン」（進化前の最初の姿）ですか？",
+                    "tier": 1,
+                    "category": "進化",
                     "candidates_count": 2,
                     "yes": {
                       "node_id": 1649,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 281,
-                        "name_ja": "キルリア",
+                        "id": 280,
+                        "name_ja": "ラルトス",
                         "type1": "エスパー",
                         "type2": "フェアリー"
                       }
@@ -14701,8 +14701,8 @@
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 280,
-                        "name_ja": "ラルトス",
+                        "id": 281,
+                        "name_ja": "キルリア",
                         "type1": "エスパー",
                         "type2": "フェアリー"
                       }
@@ -15089,18 +15089,18 @@
                       "node_id": 1687,
                       "type": "question",
                       "depth": 10,
-                      "question_id": "q11_weight_625_624",
-                      "question_text": "おもさが 70.0kg 以上ですか？",
-                      "tier": 2,
-                      "category": "サイズ・体格",
+                      "question_id": "q11_first_stage_624_625",
+                      "question_text": "「たねポケモン」（進化前の最初の姿）ですか？",
+                      "tier": 1,
+                      "category": "進化",
                       "candidates_count": 2,
                       "yes": {
                         "node_id": 1688,
                         "type": "leaf",
                         "depth": 11,
                         "pokemon": {
-                          "id": 625,
-                          "name_ja": "キリキザン",
+                          "id": 624,
+                          "name_ja": "コマタナ",
                           "type1": "悪",
                           "type2": "鋼"
                         }
@@ -15110,8 +15110,8 @@
                         "type": "leaf",
                         "depth": 11,
                         "pokemon": {
-                          "id": 624,
-                          "name_ja": "コマタナ",
+                          "id": 625,
+                          "name_ja": "キリキザン",
                           "type1": "悪",
                           "type2": "鋼"
                         }
@@ -15122,18 +15122,18 @@
                     "node_id": 1690,
                     "type": "question",
                     "depth": 9,
-                    "question_id": "q11_weight_958_957",
-                    "question_text": "おもさが 59.1kg 以上ですか？",
-                    "tier": 2,
-                    "category": "サイズ・体格",
+                    "question_id": "q11_first_stage_957_958",
+                    "question_text": "「たねポケモン」（進化前の最初の姿）ですか？",
+                    "tier": 1,
+                    "category": "進化",
                     "candidates_count": 2,
                     "yes": {
                       "node_id": 1691,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 958,
-                        "name_ja": "ナカヌチャン",
+                        "id": 957,
+                        "name_ja": "カヌチャン",
                         "type1": "フェアリー",
                         "type2": "鋼"
                       }
@@ -15143,8 +15143,8 @@
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 957,
-                        "name_ja": "カヌチャン",
+                        "id": 958,
+                        "name_ja": "ナカヌチャン",
                         "type1": "フェアリー",
                         "type2": "鋼"
                       }
@@ -15216,18 +15216,18 @@
                       "node_id": 1699,
                       "type": "question",
                       "depth": 10,
-                      "question_id": "q11_weight_575_574",
-                      "question_text": "おもさが 18.0kg 以上ですか？",
-                      "tier": 2,
-                      "category": "サイズ・体格",
+                      "question_id": "q11_first_stage_574_575",
+                      "question_text": "「たねポケモン」（進化前の最初の姿）ですか？",
+                      "tier": 1,
+                      "category": "進化",
                       "candidates_count": 2,
                       "yes": {
                         "node_id": 1700,
                         "type": "leaf",
                         "depth": 11,
                         "pokemon": {
-                          "id": 575,
-                          "name_ja": "ゴチミル",
+                          "id": 574,
+                          "name_ja": "ゴチム",
                           "type1": "エスパー",
                           "type2": null
                         }
@@ -15237,8 +15237,8 @@
                         "type": "leaf",
                         "depth": 11,
                         "pokemon": {
-                          "id": 574,
-                          "name_ja": "ゴチム",
+                          "id": 575,
+                          "name_ja": "ゴチミル",
                           "type1": "エスパー",
                           "type2": null
                         }
@@ -18754,18 +18754,18 @@
                     "node_id": 2082,
                     "type": "question",
                     "depth": 9,
-                    "question_id": "q11_weight_42_41",
-                    "question_text": "おもさが 55.0kg 以上ですか？",
-                    "tier": 2,
-                    "category": "サイズ・体格",
+                    "question_id": "q11_first_stage_41_42",
+                    "question_text": "「たねポケモン」（進化前の最初の姿）ですか？",
+                    "tier": 1,
+                    "category": "進化",
                     "candidates_count": 2,
                     "yes": {
                       "node_id": 2083,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 42,
-                        "name_ja": "ゴルバット",
+                        "id": 41,
+                        "name_ja": "ズバット",
                         "type1": "毒",
                         "type2": "飛行"
                       }
@@ -18775,8 +18775,8 @@
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 41,
-                        "name_ja": "ズバット",
+                        "id": 42,
+                        "name_ja": "ゴルバット",
                         "type1": "毒",
                         "type2": "飛行"
                       }
@@ -19048,18 +19048,18 @@
                       "node_id": 2110,
                       "type": "question",
                       "depth": 10,
-                      "question_id": "q11_weight_73_72",
-                      "question_text": "おもさが 55.0kg 以上ですか？",
-                      "tier": 2,
-                      "category": "サイズ・体格",
+                      "question_id": "q11_can_evolve_72_73",
+                      "question_text": "これ以上進化できますか？",
+                      "tier": 1,
+                      "category": "進化",
                       "candidates_count": 2,
                       "yes": {
                         "node_id": 2111,
                         "type": "leaf",
                         "depth": 11,
                         "pokemon": {
-                          "id": 73,
-                          "name_ja": "ドククラゲ",
+                          "id": 72,
+                          "name_ja": "メノクラゲ",
                           "type1": "水",
                           "type2": "毒"
                         }
@@ -19069,8 +19069,8 @@
                         "type": "leaf",
                         "depth": 11,
                         "pokemon": {
-                          "id": 72,
-                          "name_ja": "メノクラゲ",
+                          "id": 73,
+                          "name_ja": "ドククラゲ",
                           "type1": "水",
                           "type2": "毒"
                         }
@@ -19238,18 +19238,18 @@
                     "node_id": 2128,
                     "type": "question",
                     "depth": 9,
-                    "question_id": "q11_weight_51_50",
-                    "question_text": "おもさが 33.3kg 以上ですか？",
-                    "tier": 2,
-                    "category": "サイズ・体格",
+                    "question_id": "q11_can_evolve_50_51",
+                    "question_text": "これ以上進化できますか？",
+                    "tier": 1,
+                    "category": "進化",
                     "candidates_count": 2,
                     "yes": {
                       "node_id": 2129,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 51,
-                        "name_ja": "ダグトリオ",
+                        "id": 50,
+                        "name_ja": "ディグダ",
                         "type1": "地面",
                         "type2": null
                       }
@@ -19259,8 +19259,8 @@
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 50,
-                        "name_ja": "ディグダ",
+                        "id": 51,
+                        "name_ja": "ダグトリオ",
                         "type1": "地面",
                         "type2": null
                       }
@@ -19521,7 +19521,7 @@
           "question_text": "道具・家具・乗り物・武器など「人工物」がモチーフですか？",
           "tier": 1,
           "category": "モチーフ",
-          "candidates_count": 55,
+          "candidates_count": 54,
           "yes": {
             "node_id": 2155,
             "type": "question",
@@ -19530,50 +19530,50 @@
             "question_text": "丸っこい・球体に近い体型ですか？",
             "tier": 1,
             "category": "体型・パーツ",
-            "candidates_count": 30,
+            "candidates_count": 29,
             "yes": {
               "node_id": 2156,
               "type": "question",
               "depth": 6,
-              "question_id": "vibe_soft_eyes",
-              "question_text": "目が大きくて愛嬌のある顔ですか？",
-              "tier": 2,
-              "category": "雰囲気・キャラ性",
-              "candidates_count": 17,
+              "question_id": "evo_can_evolve",
+              "question_text": "これ以上進化できますか？",
+              "tier": 1,
+              "category": "進化・系統",
+              "candidates_count": 16,
               "yes": {
                 "node_id": 2157,
                 "type": "question",
                 "depth": 7,
-                "question_id": "name_has_dakuten",
-                "question_text": "名前に濁点（ガ・ザ・ダ・バ行等）が含まれますか？",
-                "tier": 3,
-                "category": "名前の特徴",
+                "question_id": "vibe_soft_eyes",
+                "question_text": "目が大きくて愛嬌のある顔ですか？",
+                "tier": 2,
+                "category": "雰囲気・キャラ性",
                 "candidates_count": 8,
                 "yes": {
                   "node_id": 2158,
                   "type": "question",
                   "depth": 8,
-                  "question_id": "lore_held_item_or_tool",
-                  "question_text": "手や体に何か「道具（スプーン、骨、ネギ、木柱など）」を持っていますか？",
+                  "question_id": "type_has_ghost",
+                  "question_text": "ゴーストタイプを持っていますか？",
                   "tier": 1,
-                  "category": "見た目・特徴",
+                  "category": "タイプ",
                   "candidates_count": 4,
                   "yes": {
                     "node_id": 2159,
                     "type": "question",
                     "depth": 9,
-                    "question_id": "q11_weight_855_854",
-                    "question_text": "おもさが 0.4kg 以上ですか？",
+                    "question_id": "q11_ability_353_854",
+                    "question_text": "特性「ふみん」を持っていますか？",
                     "tier": 2,
-                    "category": "サイズ・体格",
+                    "category": "固有特性",
                     "candidates_count": 2,
                     "yes": {
                       "node_id": 2160,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 855,
-                        "name_ja": "ポットデス",
+                        "id": 353,
+                        "name_ja": "カゲボウズ",
                         "type1": "ゴースト",
                         "type2": null
                       }
@@ -19594,7 +19594,7 @@
                     "node_id": 2162,
                     "type": "question",
                     "depth": 9,
-                    "question_id": "q11_ability_233_353",
+                    "question_id": "q11_ability_233_433",
                     "question_text": "特性「トレース」を持っていますか？",
                     "tier": 2,
                     "category": "固有特性",
@@ -19615,9 +19615,9 @@
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 353,
-                        "name_ja": "カゲボウズ",
-                        "type1": "ゴースト",
+                        "id": 433,
+                        "name_ja": "リーシャン",
+                        "type1": "エスパー",
                         "type2": null
                       }
                     }
@@ -19627,17 +19627,17 @@
                   "node_id": 2165,
                   "type": "question",
                   "depth": 8,
-                  "question_id": "vibe_early_route",
-                  "question_text": "ストーリー序盤の草むらや洞窟に出てきそうな雰囲気ですか？",
-                  "tier": 2,
-                  "category": "雰囲気・キャラ性",
+                  "question_id": "body_two_eyes",
+                  "question_text": "目が2つ（左右対称の一般的な顔）ですか？",
+                  "tier": 1,
+                  "category": "体型・パーツ",
                   "candidates_count": 4,
                   "yes": {
                     "node_id": 2166,
                     "type": "question",
                     "depth": 9,
-                    "question_id": "q11_ability_433_607",
-                    "question_text": "特性「ふゆう」を持っていますか？",
+                    "question_id": "q11_ability_374_436",
+                    "question_text": "特性「クリアボディ」を持っていますか？",
                     "tier": 2,
                     "category": "固有特性",
                     "candidates_count": 2,
@@ -19646,10 +19646,10 @@
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 433,
-                        "name_ja": "リーシャン",
-                        "type1": "エスパー",
-                        "type2": null
+                        "id": 374,
+                        "name_ja": "ダンバル",
+                        "type1": "鋼",
+                        "type2": "エスパー"
                       }
                     },
                     "no": {
@@ -19657,10 +19657,10 @@
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 607,
-                        "name_ja": "ヒトモシ",
-                        "type1": "ゴースト",
-                        "type2": "炎"
+                        "id": 436,
+                        "name_ja": "ドーミラー",
+                        "type1": "鋼",
+                        "type2": "エスパー"
                       }
                     }
                   },
@@ -19668,13 +19668,97 @@
                     "node_id": 2169,
                     "type": "question",
                     "depth": 9,
-                    "question_id": "q11_ability_479_707",
-                    "question_text": "特性「ふゆう」を持っていますか？",
+                    "question_id": "q11_ability_81_100",
+                    "question_text": "特性「じりょく」を持っていますか？",
                     "tier": 2,
                     "category": "固有特性",
                     "candidates_count": 2,
                     "yes": {
                       "node_id": 2170,
+                      "type": "leaf",
+                      "depth": 10,
+                      "pokemon": {
+                        "id": 81,
+                        "name_ja": "コイル",
+                        "type1": "電気",
+                        "type2": "鋼"
+                      }
+                    },
+                    "no": {
+                      "node_id": 2171,
+                      "type": "leaf",
+                      "depth": 10,
+                      "pokemon": {
+                        "id": 100,
+                        "name_ja": "ビリリダマ",
+                        "type1": "電気",
+                        "type2": null
+                      }
+                    }
+                  }
+                }
+              },
+              "no": {
+                "node_id": 2172,
+                "type": "question",
+                "depth": 7,
+                "question_id": "matchup_has_immune",
+                "question_text": "タイプ相性で無効（0倍）にできるタイプがありますか？",
+                "tier": 2,
+                "category": "タイプ相性",
+                "candidates_count": 8,
+                "yes": {
+                  "node_id": 2173,
+                  "type": "question",
+                  "depth": 8,
+                  "question_id": "type_has_added_gen2plus",
+                  "question_text": "第2世代以降に追加されたタイプ（あく・はがね・フェアリー）を持ちますか？",
+                  "tier": 2,
+                  "category": "タイプ構成",
+                  "candidates_count": 4,
+                  "yes": {
+                    "node_id": 2174,
+                    "type": "question",
+                    "depth": 9,
+                    "question_id": "q11_ability_442_707",
+                    "question_text": "特性「プレッシャー」を持っていますか？",
+                    "tier": 2,
+                    "category": "固有特性",
+                    "candidates_count": 2,
+                    "yes": {
+                      "node_id": 2175,
+                      "type": "leaf",
+                      "depth": 10,
+                      "pokemon": {
+                        "id": 442,
+                        "name_ja": "ミカルゲ",
+                        "type1": "ゴースト",
+                        "type2": "悪"
+                      }
+                    },
+                    "no": {
+                      "node_id": 2176,
+                      "type": "leaf",
+                      "depth": 10,
+                      "pokemon": {
+                        "id": 707,
+                        "name_ja": "クレッフィ",
+                        "type1": "鋼",
+                        "type2": "フェアリー"
+                      }
+                    }
+                  },
+                  "no": {
+                    "node_id": 2177,
+                    "type": "question",
+                    "depth": 9,
+                    "question_id": "q11_ability_479_855",
+                    "question_text": "特性「ふゆう」を持っていますか？",
+                    "tier": 2,
+                    "category": "固有特性",
+                    "candidates_count": 2,
+                    "yes": {
+                      "node_id": 2178,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -19685,39 +19769,29 @@
                       }
                     },
                     "no": {
-                      "node_id": 2171,
+                      "node_id": 2179,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 707,
-                        "name_ja": "クレッフィ",
-                        "type1": "鋼",
-                        "type2": "フェアリー"
+                        "id": 855,
+                        "name_ja": "ポットデス",
+                        "type1": "ゴースト",
+                        "type2": null
                       }
                     }
                   }
-                }
-              },
-              "no": {
-                "node_id": 2172,
-                "type": "question",
-                "depth": 7,
-                "question_id": "body_two_eyes",
-                "question_text": "目が2つ（左右対称の一般的な顔）ですか？",
-                "tier": 1,
-                "category": "体型・パーツ",
-                "candidates_count": 9,
-                "yes": {
-                  "node_id": 2173,
+                },
+                "no": {
+                  "node_id": 2180,
                   "type": "question",
                   "depth": 8,
                   "question_id": "motif_myth",
                   "question_text": "神話・妖怪・伝説の生き物がモチーフですか？",
                   "tier": 1,
                   "category": "モチーフ",
-                  "candidates_count": 5,
+                  "candidates_count": 4,
                   "yes": {
-                    "node_id": 2174,
+                    "node_id": 2181,
                     "type": "question",
                     "depth": 9,
                     "question_id": "q11_moon_motif",
@@ -19726,7 +19800,7 @@
                     "category": "モチーフ",
                     "candidates_count": 2,
                     "yes": {
-                      "node_id": 2175,
+                      "node_id": 2182,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -19737,7 +19811,7 @@
                       }
                     },
                     "no": {
-                      "node_id": 2176,
+                      "node_id": 2183,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -19749,111 +19823,27 @@
                     }
                   },
                   "no": {
-                    "node_id": 2177,
+                    "node_id": 2184,
                     "type": "question",
                     "depth": 9,
-                    "question_id": "vibe_cute_vs_cool",
-                    "question_text": "可愛らしい・マスコット的な見た目ですか？",
-                    "tier": 2,
-                    "category": "雰囲気・キャラ性",
-                    "candidates_count": 3,
-                    "yes": {
-                      "node_id": 2178,
-                      "type": "leaf",
-                      "depth": 10,
-                      "pokemon": {
-                        "id": 374,
-                        "name_ja": "ダンバル",
-                        "type1": "鋼",
-                        "type2": "エスパー"
-                      }
-                    },
-                    "no": {
-                      "node_id": 2179,
-                      "type": "question",
-                      "depth": 10,
-                      "question_id": "q11_ability_101_436",
-                      "question_text": "特性「ぼうおん」を持っていますか？",
-                      "tier": 2,
-                      "category": "固有特性",
-                      "candidates_count": 2,
-                      "yes": {
-                        "node_id": 2180,
-                        "type": "leaf",
-                        "depth": 11,
-                        "pokemon": {
-                          "id": 101,
-                          "name_ja": "マルマイン",
-                          "type1": "電気",
-                          "type2": null
-                        }
-                      },
-                      "no": {
-                        "node_id": 2181,
-                        "type": "leaf",
-                        "depth": 11,
-                        "pokemon": {
-                          "id": 436,
-                          "name_ja": "ドーミラー",
-                          "type1": "鋼",
-                          "type2": "エスパー"
-                        }
-                      }
-                    }
-                  }
-                },
-                "no": {
-                  "node_id": 2182,
-                  "type": "question",
-                  "depth": 8,
-                  "question_id": "type_has_electric",
-                  "question_text": "でんきタイプを持っていますか？",
-                  "tier": 1,
-                  "category": "タイプ",
-                  "candidates_count": 4,
-                  "yes": {
-                    "node_id": 2183,
-                    "type": "question",
-                    "depth": 9,
-                    "question_id": "q11_ability_81_100",
-                    "question_text": "特性「じりょく」を持っていますか？",
+                    "question_id": "q11_ability_101_201",
+                    "question_text": "特性「ぼうおん」を持っていますか？",
                     "tier": 2,
                     "category": "固有特性",
                     "candidates_count": 2,
                     "yes": {
-                      "node_id": 2184,
-                      "type": "leaf",
-                      "depth": 10,
-                      "pokemon": {
-                        "id": 81,
-                        "name_ja": "コイル",
-                        "type1": "電気",
-                        "type2": "鋼"
-                      }
-                    },
-                    "no": {
                       "node_id": 2185,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 100,
-                        "name_ja": "ビリリダマ",
+                        "id": 101,
+                        "name_ja": "マルマイン",
                         "type1": "電気",
                         "type2": null
                       }
-                    }
-                  },
-                  "no": {
-                    "node_id": 2186,
-                    "type": "question",
-                    "depth": 9,
-                    "question_id": "q11_ability_201_442",
-                    "question_text": "特性「ふゆう」を持っていますか？",
-                    "tier": 2,
-                    "category": "固有特性",
-                    "candidates_count": 2,
-                    "yes": {
-                      "node_id": 2187,
+                    },
+                    "no": {
+                      "node_id": 2186,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -19862,24 +19852,13 @@
                         "type1": "エスパー",
                         "type2": null
                       }
-                    },
-                    "no": {
-                      "node_id": 2188,
-                      "type": "leaf",
-                      "depth": 10,
-                      "pokemon": {
-                        "id": 442,
-                        "name_ja": "ミカルゲ",
-                        "type1": "ゴースト",
-                        "type2": "悪"
-                      }
                     }
                   }
                 }
               }
             },
             "no": {
-              "node_id": 2189,
+              "node_id": 2187,
               "type": "question",
               "depth": 6,
               "question_id": "type_has_steel",
@@ -19888,7 +19867,7 @@
               "category": "タイプ",
               "candidates_count": 13,
               "yes": {
-                "node_id": 2190,
+                "node_id": 2188,
                 "type": "question",
                 "depth": 7,
                 "question_id": "body_sharp_parts",
@@ -19897,7 +19876,7 @@
                 "category": "体型・パーツ",
                 "candidates_count": 6,
                 "yes": {
-                  "node_id": 2191,
+                  "node_id": 2189,
                   "type": "question",
                   "depth": 8,
                   "question_id": "motif_myth",
@@ -19906,7 +19885,7 @@
                   "category": "モチーフ",
                   "candidates_count": 3,
                   "yes": {
-                    "node_id": 2192,
+                    "node_id": 2190,
                     "type": "leaf",
                     "depth": 9,
                     "pokemon": {
@@ -19917,27 +19896,16 @@
                     }
                   },
                   "no": {
-                    "node_id": 2193,
+                    "node_id": 2191,
                     "type": "question",
                     "depth": 9,
-                    "question_id": "q11_weight_680_679",
-                    "question_text": "おもさが 4.5kg 以上ですか？",
-                    "tier": 2,
-                    "category": "サイズ・体格",
+                    "question_id": "q11_first_stage_679_680",
+                    "question_text": "「たねポケモン」（進化前の最初の姿）ですか？",
+                    "tier": 1,
+                    "category": "進化",
                     "candidates_count": 2,
                     "yes": {
-                      "node_id": 2194,
-                      "type": "leaf",
-                      "depth": 10,
-                      "pokemon": {
-                        "id": 680,
-                        "name_ja": "ニダンギル",
-                        "type1": "鋼",
-                        "type2": "ゴースト"
-                      }
-                    },
-                    "no": {
-                      "node_id": 2195,
+                      "node_id": 2192,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -19946,11 +19914,22 @@
                         "type1": "鋼",
                         "type2": "ゴースト"
                       }
+                    },
+                    "no": {
+                      "node_id": 2193,
+                      "type": "leaf",
+                      "depth": 10,
+                      "pokemon": {
+                        "id": 680,
+                        "name_ja": "ニダンギル",
+                        "type1": "鋼",
+                        "type2": "ゴースト"
+                      }
                     }
                   }
                 },
                 "no": {
-                  "node_id": 2196,
+                  "node_id": 2194,
                   "type": "question",
                   "depth": 8,
                   "question_id": "vibe_early_route",
@@ -19959,7 +19938,7 @@
                   "category": "雰囲気・キャラ性",
                   "candidates_count": 3,
                   "yes": {
-                    "node_id": 2197,
+                    "node_id": 2195,
                     "type": "leaf",
                     "depth": 9,
                     "pokemon": {
@@ -19970,7 +19949,7 @@
                     }
                   },
                   "no": {
-                    "node_id": 2198,
+                    "node_id": 2196,
                     "type": "question",
                     "depth": 9,
                     "question_id": "q11_ability_462_601",
@@ -19979,7 +19958,7 @@
                     "category": "固有特性",
                     "candidates_count": 2,
                     "yes": {
-                      "node_id": 2199,
+                      "node_id": 2197,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -19990,7 +19969,7 @@
                       }
                     },
                     "no": {
-                      "node_id": 2200,
+                      "node_id": 2198,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20004,7 +19983,7 @@
                 }
               },
               "no": {
-                "node_id": 2201,
+                "node_id": 2199,
                 "type": "question",
                 "depth": 7,
                 "question_id": "body_sharp_parts",
@@ -20013,7 +19992,7 @@
                 "category": "体型・パーツ",
                 "candidates_count": 7,
                 "yes": {
-                  "node_id": 2202,
+                  "node_id": 2200,
                   "type": "question",
                   "depth": 8,
                   "question_id": "color_is_yellow",
@@ -20022,7 +20001,7 @@
                   "category": "色・配色",
                   "candidates_count": 3,
                   "yes": {
-                    "node_id": 2203,
+                    "node_id": 2201,
                     "type": "leaf",
                     "depth": 9,
                     "pokemon": {
@@ -20033,7 +20012,7 @@
                     }
                   },
                   "no": {
-                    "node_id": 2204,
+                    "node_id": 2202,
                     "type": "question",
                     "depth": 9,
                     "question_id": "q11_ability_615_895",
@@ -20042,7 +20021,7 @@
                     "category": "固有特性",
                     "candidates_count": 2,
                     "yes": {
-                      "node_id": 2205,
+                      "node_id": 2203,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20053,7 +20032,7 @@
                       }
                     },
                     "no": {
-                      "node_id": 2206,
+                      "node_id": 2204,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20066,7 +20045,7 @@
                   }
                 },
                 "no": {
-                  "node_id": 2207,
+                  "node_id": 2205,
                   "type": "question",
                   "depth": 8,
                   "question_id": "type_has_ghost",
@@ -20075,7 +20054,7 @@
                   "category": "タイプ",
                   "candidates_count": 4,
                   "yes": {
-                    "node_id": 2208,
+                    "node_id": 2206,
                     "type": "question",
                     "depth": 9,
                     "question_id": "q11_ability_781_867",
@@ -20084,7 +20063,7 @@
                     "category": "固有特性",
                     "candidates_count": 2,
                     "yes": {
-                      "node_id": 2209,
+                      "node_id": 2207,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20095,7 +20074,7 @@
                       }
                     },
                     "no": {
-                      "node_id": 2210,
+                      "node_id": 2208,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20107,7 +20086,7 @@
                     }
                   },
                   "no": {
-                    "node_id": 2211,
+                    "node_id": 2209,
                     "type": "question",
                     "depth": 9,
                     "question_id": "q11_ability_137_561",
@@ -20116,7 +20095,7 @@
                     "category": "固有特性",
                     "candidates_count": 2,
                     "yes": {
-                      "node_id": 2212,
+                      "node_id": 2210,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20127,7 +20106,7 @@
                       }
                     },
                     "no": {
-                      "node_id": 2213,
+                      "node_id": 2211,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20143,7 +20122,7 @@
             }
           },
           "no": {
-            "node_id": 2214,
+            "node_id": 2212,
             "type": "question",
             "depth": 5,
             "question_id": "evo_can_evolve",
@@ -20152,7 +20131,7 @@
             "category": "進化・系統",
             "candidates_count": 25,
             "yes": {
-              "node_id": 2215,
+              "node_id": 2213,
               "type": "question",
               "depth": 6,
               "question_id": "size_handheld",
@@ -20161,7 +20140,7 @@
               "category": "サイズ・体格",
               "candidates_count": 12,
               "yes": {
-                "node_id": 2216,
+                "node_id": 2214,
                 "type": "question",
                 "depth": 7,
                 "question_id": "motif_food",
@@ -20170,16 +20149,16 @@
                 "category": "モチーフ",
                 "candidates_count": 6,
                 "yes": {
-                  "node_id": 2217,
+                  "node_id": 2215,
                   "type": "question",
                   "depth": 8,
                   "question_id": "color_is_brown",
-                  "question_text": "体の大部分が「茶」ですか？",
+                  "question_text": "体の大部分が「茶色」ですか？",
                   "tier": 1,
                   "category": "色・配色",
                   "candidates_count": 3,
                   "yes": {
-                    "node_id": 2218,
+                    "node_id": 2216,
                     "type": "leaf",
                     "depth": 9,
                     "pokemon": {
@@ -20190,7 +20169,7 @@
                     }
                   },
                   "no": {
-                    "node_id": 2219,
+                    "node_id": 2217,
                     "type": "question",
                     "depth": 9,
                     "question_id": "q11_ability_684_868",
@@ -20199,7 +20178,7 @@
                     "category": "固有特性",
                     "candidates_count": 2,
                     "yes": {
-                      "node_id": 2220,
+                      "node_id": 2218,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20210,7 +20189,7 @@
                       }
                     },
                     "no": {
-                      "node_id": 2221,
+                      "node_id": 2219,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20223,7 +20202,7 @@
                   }
                 },
                 "no": {
-                  "node_id": 2222,
+                  "node_id": 2220,
                   "type": "question",
                   "depth": 8,
                   "question_id": "color_is_green",
@@ -20232,7 +20211,7 @@
                   "category": "色・配色",
                   "candidates_count": 3,
                   "yes": {
-                    "node_id": 2223,
+                    "node_id": 2221,
                     "type": "leaf",
                     "depth": 9,
                     "pokemon": {
@@ -20243,7 +20222,7 @@
                     }
                   },
                   "no": {
-                    "node_id": 2224,
+                    "node_id": 2222,
                     "type": "question",
                     "depth": 9,
                     "question_id": "q11_ability_789_790",
@@ -20252,7 +20231,7 @@
                     "category": "固有特性",
                     "candidates_count": 2,
                     "yes": {
-                      "node_id": 2225,
+                      "node_id": 2223,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20263,7 +20242,7 @@
                       }
                     },
                     "no": {
-                      "node_id": 2226,
+                      "node_id": 2224,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20277,7 +20256,7 @@
                 }
               },
               "no": {
-                "node_id": 2227,
+                "node_id": 2225,
                 "type": "question",
                 "depth": 7,
                 "question_id": "vibe_famous",
@@ -20286,7 +20265,7 @@
                 "category": "雰囲気・キャラ性",
                 "candidates_count": 6,
                 "yes": {
-                  "node_id": 2228,
+                  "node_id": 2226,
                   "type": "question",
                   "depth": 8,
                   "question_id": "color_is_purple",
@@ -20295,7 +20274,7 @@
                   "category": "色・配色",
                   "candidates_count": 3,
                   "yes": {
-                    "node_id": 2229,
+                    "node_id": 2227,
                     "type": "question",
                     "depth": 9,
                     "question_id": "q11_ability_109_92",
@@ -20304,7 +20283,7 @@
                     "category": "固有特性",
                     "candidates_count": 2,
                     "yes": {
-                      "node_id": 2230,
+                      "node_id": 2228,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20315,7 +20294,7 @@
                       }
                     },
                     "no": {
-                      "node_id": 2231,
+                      "node_id": 2229,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20327,7 +20306,7 @@
                     }
                   },
                   "no": {
-                    "node_id": 2232,
+                    "node_id": 2230,
                     "type": "leaf",
                     "depth": 9,
                     "pokemon": {
@@ -20339,7 +20318,7 @@
                   }
                 },
                 "no": {
-                  "node_id": 2233,
+                  "node_id": 2231,
                   "type": "question",
                   "depth": 8,
                   "question_id": "color_is_blue",
@@ -20348,7 +20327,7 @@
                   "category": "色・配色",
                   "candidates_count": 3,
                   "yes": {
-                    "node_id": 2234,
+                    "node_id": 2232,
                     "type": "leaf",
                     "depth": 9,
                     "pokemon": {
@@ -20359,7 +20338,7 @@
                     }
                   },
                   "no": {
-                    "node_id": 2235,
+                    "node_id": 2233,
                     "type": "question",
                     "depth": 9,
                     "question_id": "q11_ability_578_946",
@@ -20368,7 +20347,7 @@
                     "category": "固有特性",
                     "candidates_count": 2,
                     "yes": {
-                      "node_id": 2236,
+                      "node_id": 2234,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20379,7 +20358,7 @@
                       }
                     },
                     "no": {
-                      "node_id": 2237,
+                      "node_id": 2235,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20394,7 +20373,7 @@
               }
             },
             "no": {
-              "node_id": 2238,
+              "node_id": 2236,
               "type": "question",
               "depth": 6,
               "question_id": "body_sharp_parts",
@@ -20403,7 +20382,7 @@
               "category": "体型・パーツ",
               "candidates_count": 13,
               "yes": {
-                "node_id": 2239,
+                "node_id": 2237,
                 "type": "question",
                 "depth": 7,
                 "question_id": "motif_myth",
@@ -20412,7 +20391,7 @@
                 "category": "モチーフ",
                 "candidates_count": 5,
                 "yes": {
-                  "node_id": 2240,
+                  "node_id": 2238,
                   "type": "question",
                   "depth": 8,
                   "question_id": "q11_ability_121_362",
@@ -20421,7 +20400,7 @@
                   "category": "固有特性",
                   "candidates_count": 2,
                   "yes": {
-                    "node_id": 2241,
+                    "node_id": 2239,
                     "type": "leaf",
                     "depth": 9,
                     "pokemon": {
@@ -20432,7 +20411,7 @@
                     }
                   },
                   "no": {
-                    "node_id": 2242,
+                    "node_id": 2240,
                     "type": "leaf",
                     "depth": 9,
                     "pokemon": {
@@ -20444,7 +20423,7 @@
                   }
                 },
                 "no": {
-                  "node_id": 2243,
+                  "node_id": 2241,
                   "type": "question",
                   "depth": 8,
                   "question_id": "color_warm",
@@ -20453,7 +20432,7 @@
                   "category": "色・配色",
                   "candidates_count": 3,
                   "yes": {
-                    "node_id": 2244,
+                    "node_id": 2242,
                     "type": "leaf",
                     "depth": 9,
                     "pokemon": {
@@ -20464,7 +20443,7 @@
                     }
                   },
                   "no": {
-                    "node_id": 2245,
+                    "node_id": 2243,
                     "type": "question",
                     "depth": 9,
                     "question_id": "q11_ability_703_970",
@@ -20473,7 +20452,7 @@
                     "category": "固有特性",
                     "candidates_count": 2,
                     "yes": {
-                      "node_id": 2246,
+                      "node_id": 2244,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20484,7 +20463,7 @@
                       }
                     },
                     "no": {
-                      "node_id": 2247,
+                      "node_id": 2245,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20498,7 +20477,7 @@
                 }
               },
               "no": {
-                "node_id": 2248,
+                "node_id": 2246,
                 "type": "question",
                 "depth": 7,
                 "question_id": "vibe_famous",
@@ -20507,7 +20486,7 @@
                 "category": "雰囲気・キャラ性",
                 "candidates_count": 8,
                 "yes": {
-                  "node_id": 2249,
+                  "node_id": 2247,
                   "type": "question",
                   "depth": 8,
                   "question_id": "body_two_eyes",
@@ -20516,7 +20495,7 @@
                   "category": "体型・パーツ",
                   "candidates_count": 3,
                   "yes": {
-                    "node_id": 2250,
+                    "node_id": 2248,
                     "type": "question",
                     "depth": 9,
                     "question_id": "q11_ability_110_1025",
@@ -20525,7 +20504,7 @@
                     "category": "固有特性",
                     "candidates_count": 2,
                     "yes": {
-                      "node_id": 2251,
+                      "node_id": 2249,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20536,7 +20515,7 @@
                       }
                     },
                     "no": {
-                      "node_id": 2252,
+                      "node_id": 2250,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20548,7 +20527,7 @@
                     }
                   },
                   "no": {
-                    "node_id": 2253,
+                    "node_id": 2251,
                     "type": "leaf",
                     "depth": 9,
                     "pokemon": {
@@ -20560,7 +20539,7 @@
                   }
                 },
                 "no": {
-                  "node_id": 2254,
+                  "node_id": 2252,
                   "type": "question",
                   "depth": 8,
                   "question_id": "motif_plant",
@@ -20569,7 +20548,7 @@
                   "category": "モチーフ",
                   "candidates_count": 5,
                   "yes": {
-                    "node_id": 2255,
+                    "node_id": 2253,
                     "type": "question",
                     "depth": 9,
                     "question_id": "q11_ability_764_947",
@@ -20578,7 +20557,7 @@
                     "category": "固有特性",
                     "candidates_count": 2,
                     "yes": {
-                      "node_id": 2256,
+                      "node_id": 2254,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20589,7 +20568,7 @@
                       }
                     },
                     "no": {
-                      "node_id": 2257,
+                      "node_id": 2255,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20601,7 +20580,7 @@
                     }
                   },
                   "no": {
-                    "node_id": 2258,
+                    "node_id": 2256,
                     "type": "question",
                     "depth": 9,
                     "question_id": "body_has_wings",
@@ -20610,7 +20589,7 @@
                     "category": "体型・パーツ",
                     "candidates_count": 3,
                     "yes": {
-                      "node_id": 2259,
+                      "node_id": 2257,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20621,7 +20600,7 @@
                       }
                     },
                     "no": {
-                      "node_id": 2260,
+                      "node_id": 2258,
                       "type": "question",
                       "depth": 10,
                       "question_id": "q11_ability_351_774",
@@ -20630,7 +20609,7 @@
                       "category": "固有特性",
                       "candidates_count": 2,
                       "yes": {
-                        "node_id": 2261,
+                        "node_id": 2259,
                         "type": "leaf",
                         "depth": 11,
                         "pokemon": {
@@ -20641,7 +20620,7 @@
                         }
                       },
                       "no": {
-                        "node_id": 2262,
+                        "node_id": 2260,
                         "type": "leaf",
                         "depth": 11,
                         "pokemon": {
@@ -20659,25 +20638,25 @@
           }
         },
         "no": {
-          "node_id": 2263,
+          "node_id": 2261,
           "type": "question",
           "depth": 4,
           "question_id": "motif_object",
           "question_text": "道具・家具・乗り物・武器など「人工物」がモチーフですか？",
           "tier": 1,
           "category": "モチーフ",
-          "candidates_count": 41,
+          "candidates_count": 42,
           "yes": {
-            "node_id": 2264,
+            "node_id": 2262,
             "type": "question",
             "depth": 5,
             "question_id": "body_has_legs",
             "question_text": "「足（脚）」がありますか？",
             "tier": 1,
             "category": "体型・パーツ",
-            "candidates_count": 18,
+            "candidates_count": 19,
             "yes": {
-              "node_id": 2265,
+              "node_id": 2263,
               "type": "question",
               "depth": 6,
               "question_id": "type_has_rock",
@@ -20686,7 +20665,7 @@
               "category": "タイプ",
               "candidates_count": 9,
               "yes": {
-                "node_id": 2266,
+                "node_id": 2264,
                 "type": "question",
                 "depth": 7,
                 "question_id": "body_two_eyes",
@@ -20695,7 +20674,7 @@
                 "category": "体型・パーツ",
                 "candidates_count": 5,
                 "yes": {
-                  "node_id": 2267,
+                  "node_id": 2265,
                   "type": "question",
                   "depth": 8,
                   "question_id": "q11_ability_438_838",
@@ -20704,7 +20683,7 @@
                   "category": "固有特性",
                   "candidates_count": 2,
                   "yes": {
-                    "node_id": 2268,
+                    "node_id": 2266,
                     "type": "leaf",
                     "depth": 9,
                     "pokemon": {
@@ -20715,7 +20694,7 @@
                     }
                   },
                   "no": {
-                    "node_id": 2269,
+                    "node_id": 2267,
                     "type": "leaf",
                     "depth": 9,
                     "pokemon": {
@@ -20727,7 +20706,7 @@
                   }
                 },
                 "no": {
-                  "node_id": 2270,
+                  "node_id": 2268,
                   "type": "question",
                   "depth": 8,
                   "question_id": "motif_humanoid",
@@ -20736,7 +20715,7 @@
                   "category": "モチーフ",
                   "candidates_count": 3,
                   "yes": {
-                    "node_id": 2271,
+                    "node_id": 2269,
                     "type": "leaf",
                     "depth": 9,
                     "pokemon": {
@@ -20747,7 +20726,7 @@
                     }
                   },
                   "no": {
-                    "node_id": 2272,
+                    "node_id": 2270,
                     "type": "question",
                     "depth": 9,
                     "question_id": "q11_ability_805_874",
@@ -20756,7 +20735,7 @@
                     "category": "固有特性",
                     "candidates_count": 2,
                     "yes": {
-                      "node_id": 2273,
+                      "node_id": 2271,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20767,7 +20746,7 @@
                       }
                     },
                     "no": {
-                      "node_id": 2274,
+                      "node_id": 2272,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
@@ -20781,7 +20760,7 @@
                 }
               },
               "no": {
-                "node_id": 2275,
+                "node_id": 2273,
                 "type": "question",
                 "depth": 7,
                 "question_id": "body_quadruped",
@@ -20790,7 +20769,7 @@
                 "category": "体型・パーツ",
                 "candidates_count": 4,
                 "yes": {
-                  "node_id": 2276,
+                  "node_id": 2274,
                   "type": "question",
                   "depth": 8,
                   "question_id": "q11_ability_989_990",
@@ -20799,7 +20778,7 @@
                   "category": "固有特性",
                   "candidates_count": 2,
                   "yes": {
-                    "node_id": 2277,
+                    "node_id": 2275,
                     "type": "leaf",
                     "depth": 9,
                     "pokemon": {
@@ -20810,7 +20789,7 @@
                     }
                   },
                   "no": {
-                    "node_id": 2278,
+                    "node_id": 2276,
                     "type": "leaf",
                     "depth": 9,
                     "pokemon": {
@@ -20822,7 +20801,7 @@
                   }
                 },
                 "no": {
-                  "node_id": 2279,
+                  "node_id": 2277,
                   "type": "question",
                   "depth": 8,
                   "question_id": "q11_ability_965_966",
@@ -20831,7 +20810,7 @@
                   "category": "固有特性",
                   "candidates_count": 2,
                   "yes": {
-                    "node_id": 2280,
+                    "node_id": 2278,
                     "type": "leaf",
                     "depth": 9,
                     "pokemon": {
@@ -20842,7 +20821,7 @@
                     }
                   },
                   "no": {
-                    "node_id": 2281,
+                    "node_id": 2279,
                     "type": "leaf",
                     "depth": 9,
                     "pokemon": {
@@ -20856,140 +20835,45 @@
               }
             },
             "no": {
-              "node_id": 2282,
+              "node_id": 2280,
               "type": "question",
               "depth": 6,
-              "question_id": "type_has_ghost",
-              "question_text": "ゴーストタイプを持っていますか？",
+              "question_id": "body_round",
+              "question_text": "丸っこい・球体に近い体型ですか？",
               "tier": 1,
-              "category": "タイプ",
-              "candidates_count": 9,
+              "category": "体型・パーツ",
+              "candidates_count": 10,
               "yes": {
-                "node_id": 2283,
+                "node_id": 2281,
                 "type": "question",
                 "depth": 7,
-                "question_id": "body_serpentine",
-                "question_text": "細長い体型（ヘビ・ドラゴン・魚・ムカデ型）ですか？",
-                "tier": 1,
-                "category": "体型・パーツ",
+                "question_id": "vibe_early_route",
+                "question_text": "ストーリー序盤の草むらや洞窟に出てきそうな雰囲気ですか？",
+                "tier": 2,
+                "category": "雰囲気・キャラ性",
                 "candidates_count": 5,
                 "yes": {
-                  "node_id": 2284,
+                  "node_id": 2282,
                   "type": "question",
                   "depth": 8,
-                  "question_id": "q11_weight_770_769",
-                  "question_text": "おもさが 250.0kg 以上ですか？",
-                  "tier": 2,
-                  "category": "サイズ・体格",
-                  "candidates_count": 2,
-                  "yes": {
-                    "node_id": 2285,
-                    "type": "leaf",
-                    "depth": 9,
-                    "pokemon": {
-                      "id": 770,
-                      "name_ja": "シロデスナ",
-                      "type1": "ゴースト",
-                      "type2": "地面"
-                    }
-                  },
-                  "no": {
-                    "node_id": 2286,
-                    "type": "leaf",
-                    "depth": 9,
-                    "pokemon": {
-                      "id": 769,
-                      "name_ja": "スナバァ",
-                      "type1": "ゴースト",
-                      "type2": "地面"
-                    }
-                  }
-                },
-                "no": {
-                  "node_id": 2287,
-                  "type": "question",
-                  "depth": 8,
-                  "question_id": "lore_held_item_or_tool",
-                  "question_text": "手や体に何か「道具（スプーン、骨、ネギ、木柱など）」を持っていますか？",
-                  "tier": 1,
-                  "category": "見た目・特徴",
-                  "candidates_count": 3,
-                  "yes": {
-                    "node_id": 2288,
-                    "type": "leaf",
-                    "depth": 9,
-                    "pokemon": {
-                      "id": 999,
-                      "name_ja": "コレクレー",
-                      "type1": "ゴースト",
-                      "type2": null
-                    }
-                  },
-                  "no": {
-                    "node_id": 2289,
-                    "type": "question",
-                    "depth": 9,
-                    "question_id": "q11_weight_1013_1012",
-                    "question_text": "おもさが 2.2kg 以上ですか？",
-                    "tier": 2,
-                    "category": "サイズ・体格",
-                    "candidates_count": 2,
-                    "yes": {
-                      "node_id": 2290,
-                      "type": "leaf",
-                      "depth": 10,
-                      "pokemon": {
-                        "id": 1013,
-                        "name_ja": "ヤバソチャ",
-                        "type1": "草",
-                        "type2": "ゴースト"
-                      }
-                    },
-                    "no": {
-                      "node_id": 2291,
-                      "type": "leaf",
-                      "depth": 10,
-                      "pokemon": {
-                        "id": 1012,
-                        "name_ja": "チャデス",
-                        "type1": "草",
-                        "type2": "ゴースト"
-                      }
-                    }
-                  }
-                }
-              },
-              "no": {
-                "node_id": 2292,
-                "type": "question",
-                "depth": 7,
-                "question_id": "body_round",
-                "question_text": "丸っこい・球体に近い体型ですか？",
-                "tier": 1,
-                "category": "体型・パーツ",
-                "candidates_count": 4,
-                "yes": {
-                  "node_id": 2293,
-                  "type": "question",
-                  "depth": 8,
-                  "question_id": "q11_ability_808_837",
-                  "question_text": "特性「じりょく」を持っていますか？",
+                  "question_id": "q11_ability_607_837",
+                  "question_text": "特性「ほのおのからだ」を持っていますか？",
                   "tier": 2,
                   "category": "固有特性",
                   "candidates_count": 2,
                   "yes": {
-                    "node_id": 2294,
+                    "node_id": 2283,
                     "type": "leaf",
                     "depth": 9,
                     "pokemon": {
-                      "id": 808,
-                      "name_ja": "メルタン",
-                      "type1": "鋼",
-                      "type2": null
+                      "id": 607,
+                      "name_ja": "ヒトモシ",
+                      "type1": "ゴースト",
+                      "type2": "炎"
                     }
                   },
                   "no": {
-                    "node_id": 2295,
+                    "node_id": 2284,
                     "type": "leaf",
                     "depth": 9,
                     "pokemon": {
@@ -21001,16 +20885,90 @@
                   }
                 },
                 "no": {
-                  "node_id": 2296,
+                  "node_id": 2285,
                   "type": "question",
                   "depth": 8,
-                  "question_id": "q11_weight_600_599",
-                  "question_text": "おもさが 51.0kg 以上ですか？",
-                  "tier": 2,
-                  "category": "サイズ・体格",
+                  "question_id": "type_has_grass",
+                  "question_text": "くさタイプを持っていますか？",
+                  "tier": 1,
+                  "category": "タイプ",
+                  "candidates_count": 3,
+                  "yes": {
+                    "node_id": 2286,
+                    "type": "question",
+                    "depth": 9,
+                    "question_id": "q11_can_evolve_1012_1013",
+                    "question_text": "これ以上進化できますか？",
+                    "tier": 1,
+                    "category": "進化",
+                    "candidates_count": 2,
+                    "yes": {
+                      "node_id": 2287,
+                      "type": "leaf",
+                      "depth": 10,
+                      "pokemon": {
+                        "id": 1012,
+                        "name_ja": "チャデス",
+                        "type1": "草",
+                        "type2": "ゴースト"
+                      }
+                    },
+                    "no": {
+                      "node_id": 2288,
+                      "type": "leaf",
+                      "depth": 10,
+                      "pokemon": {
+                        "id": 1013,
+                        "name_ja": "ヤバソチャ",
+                        "type1": "草",
+                        "type2": "ゴースト"
+                      }
+                    }
+                  },
+                  "no": {
+                    "node_id": 2289,
+                    "type": "leaf",
+                    "depth": 9,
+                    "pokemon": {
+                      "id": 808,
+                      "name_ja": "メルタン",
+                      "type1": "鋼",
+                      "type2": null
+                    }
+                  }
+                }
+              },
+              "no": {
+                "node_id": 2290,
+                "type": "question",
+                "depth": 7,
+                "question_id": "color_is_gray",
+                "question_text": "体の大部分が「灰」ですか？",
+                "tier": 1,
+                "category": "色・配色",
+                "candidates_count": 5,
+                "yes": {
+                  "node_id": 2291,
+                  "type": "question",
+                  "depth": 8,
+                  "question_id": "q11_first_stage_599_600",
+                  "question_text": "「たねポケモン」（進化前の最初の姿）ですか？",
+                  "tier": 1,
+                  "category": "進化",
                   "candidates_count": 2,
                   "yes": {
-                    "node_id": 2297,
+                    "node_id": 2292,
+                    "type": "leaf",
+                    "depth": 9,
+                    "pokemon": {
+                      "id": 599,
+                      "name_ja": "ギアル",
+                      "type1": "鋼",
+                      "type2": null
+                    }
+                  },
+                  "no": {
+                    "node_id": 2293,
                     "type": "leaf",
                     "depth": 9,
                     "pokemon": {
@@ -21019,15 +20977,57 @@
                       "type1": "鋼",
                       "type2": null
                     }
+                  }
+                },
+                "no": {
+                  "node_id": 2294,
+                  "type": "question",
+                  "depth": 8,
+                  "question_id": "body_serpentine",
+                  "question_text": "細長い体型（ヘビ・ドラゴン・魚・ムカデ型）ですか？",
+                  "tier": 1,
+                  "category": "体型・パーツ",
+                  "candidates_count": 3,
+                  "yes": {
+                    "node_id": 2295,
+                    "type": "question",
+                    "depth": 9,
+                    "question_id": "q11_can_evolve_769_770",
+                    "question_text": "これ以上進化できますか？",
+                    "tier": 1,
+                    "category": "進化",
+                    "candidates_count": 2,
+                    "yes": {
+                      "node_id": 2296,
+                      "type": "leaf",
+                      "depth": 10,
+                      "pokemon": {
+                        "id": 769,
+                        "name_ja": "スナバァ",
+                        "type1": "ゴースト",
+                        "type2": "地面"
+                      }
+                    },
+                    "no": {
+                      "node_id": 2297,
+                      "type": "leaf",
+                      "depth": 10,
+                      "pokemon": {
+                        "id": 770,
+                        "name_ja": "シロデスナ",
+                        "type1": "ゴースト",
+                        "type2": "地面"
+                      }
+                    }
                   },
                   "no": {
                     "node_id": 2298,
                     "type": "leaf",
                     "depth": 9,
                     "pokemon": {
-                      "id": 599,
-                      "name_ja": "ギアル",
-                      "type1": "鋼",
+                      "id": 999,
+                      "name_ja": "コレクレー",
+                      "type1": "ゴースト",
                       "type2": null
                     }
                   }
@@ -21476,18 +21476,18 @@
                     "node_id": 2341,
                     "type": "question",
                     "depth": 9,
-                    "question_id": "q11_weight_71_70",
-                    "question_text": "おもさが 15.5kg 以上ですか？",
-                    "tier": 2,
-                    "category": "サイズ・体格",
+                    "question_id": "q11_can_evolve_70_71",
+                    "question_text": "これ以上進化できますか？",
+                    "tier": 1,
+                    "category": "進化",
                     "candidates_count": 2,
                     "yes": {
                       "node_id": 2342,
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 71,
-                        "name_ja": "ウツボット",
+                        "id": 70,
+                        "name_ja": "ウツドン",
                         "type1": "草",
                         "type2": "毒"
                       }
@@ -21497,8 +21497,8 @@
                       "type": "leaf",
                       "depth": 10,
                       "pokemon": {
-                        "id": 70,
-                        "name_ja": "ウツドン",
+                        "id": 71,
+                        "name_ja": "ウツボット",
                         "type1": "草",
                         "type2": "毒"
                       }

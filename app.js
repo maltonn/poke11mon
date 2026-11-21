@@ -108,7 +108,7 @@
       treeData = window.TREE_DATA;
     } else {
       try {
-        const res = await fetch('data/tree.json');
+        const res = await fetch('data/tree.json?v=20261121_1');
         treeData = await res.json();
       } catch (err) {
         console.error('Failed to load tree data:', err);

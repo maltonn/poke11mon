@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポケ11問！ 全質問ツリービューア</title>
+  <meta name="description" content="ポケ11問！の全1,025匹を特定する決定木構造を可視化・探索できるツールです。">
+  <link rel="icon" type="image/png" href="../icon.png">
+
+  <!-- Google Fonts: Zen Maru Gothic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=20261121_1">
+</head>
+
+<body>
+  <div class="viewer-container">
+    <!-- ヘッダー -->
+    <header class="viewer-header">
+      <div class="brand-area">
+        <div class="logo-badge">
+          <span>ポケ11問！</span>
+        </div>
+        <h1 class="page-title">全質問ツリー</h1>
+      </div>
+      <a href="../index.html" class="btn-back-game">
+        <span>🎮 クイズをあそぶ</span>
+      </a>
+    </header>
+
+    <!-- 統計サマリーバー -->
+    <section class="stats-grid">
+      <div class="stat-card">
+        <span id="stat-total-pokemon" class="stat-val">1025 匹</span>
+        <span class="stat-label">収録ポケモン数</span>
+      </div>
+      <div class="stat-card">
+        <span id="stat-max-depth" class="stat-val">11 問</span>
+        <span class="stat-label">最大質問数</span>
+      </div>
+      <div class="stat-card">
+        <span id="stat-avg-depth" class="stat-val">約 10.1 問</span>
+        <span class="stat-label">平均質問数</span>
+      </div>
+      <div class="stat-card">
+        <span id="stat-total-nodes" class="stat-val">1024 問</span>
+        <span class="stat-label">質問分岐ノード</span>
+      </div>
+    </section>
+
+    <!-- タブ切り替えバー -->
+    <nav class="tab-nav">
+      <button class="tab-btn active" data-tab="tab-search">
+        <span>🔍 ポケモン別ルート</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-hierarchy">
+        <span>🌳 全体階層ツリー</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-explorer">
+        <span>🎮 ステップ探索</span>
+      </button>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <main>
+      <!-- ================= 1. ポケモン別ルート検索 ================= -->
+      <section id="tab-search" class="tab-content active">
+        <div class="panel-card">
+          <h2 class="panel-title">
+            <span>🔍</span>
+            <span>ポケモン別 質問ルート検索</span>
+          </h2>
+          <p class="panel-desc">
+            全1,025匹の中からポケモン名を指定して、最初の質問からそのポケモンにたどり着くまでの「はい／いいえ」のルートを確認できます。
+          </p>
+
+          <div class="search-form-row">
+            <input type="text" id="pokemon-search-input" list="pokemon-search-datalist" placeholder="ポケモン名を入力（例：ゲンガー、ピカチュウ）"
+              class="search-input" autocomplete="off">
+            <datalist id="pokemon-search-datalist"></datalist>
+            <button id="btn-search-pokemon" class="btn btn-primary">
+              <span>ルートを表示</span>
+            </button>
+            <button id="btn-random-pokemon" class="btn btn-subtle">
+              <span>🎲 ランダム</span>
+            </button>
+          </div>
+
+          <!-- 有名ポケモンクイックピック -->
+          <div class="quick-pick-chips">
+            <span class="chip-label">よく見るポケモン：</span>
+            <div id="quick-pick-container" style="display: flex; flex-wrap: wrap; gap: 6px;"></div>
+          </div>
+
+          <!-- 結果表示エリア -->
+          <div id="search-result-area"></div>
+        </div>
+      </section>
+
+      <!-- ================= 2. 全体階層ツリー ================= -->
+      <section id="tab-hierarchy" class="tab-content">
+        <div class="panel-card">
+          <h2 class="panel-title">
+            <span>🌳</span>
+            <span>全体階層ツリー（二分木エクスプローラー）</span>
+          </h2>
+          <p class="panel-desc">
+            ルートノード（Q1）から葉ノード（ポケモン）までの決定木の階層構造です。クリックで各分岐を展開・折りたたみできます。
+          </p>
+
+          <div class="tree-controls">
+            <button id="btn-tree-depth-1" class="btn btn-subtle btn-sm">1階層展開</button>
+            <button id="btn-tree-depth-2" class="btn btn-subtle btn-sm">2階層展開</button>
+            <button id="btn-tree-depth-3" class="btn btn-subtle btn-sm">3階層展開</button>
+            <button id="btn-tree-expand-all" class="btn btn-subtle btn-sm">すべて展開</button>
+            <button id="btn-tree-collapse-all" class="btn btn-subtle btn-sm">すべて閉じる</button>
+            <input type="text" id="tree-filter-input" placeholder="質問文をキーワード検索..." class="tree-filter-input">
+          </div>
+
+          <div id="tree-hierarchy-container" class="tree-view-container"></div>
+        </div>
+      </section>
+
+      <!-- ================= 3. ステップ探索 ================= -->
+      <section id="tab-explorer" class="tab-content">
+        <div class="panel-card">
+          <h2 class="panel-title">
+            <span>🎮</span>
+            <span>インタラクティブ・ステップ探索</span>
+          </h2>
+          <p class="panel-desc">
+            「はい」「いいえ」を選びながら、候補ポケモンがどのように絞り込まれていくかをリアルタイムに確認できます。
+          </p>
+
+          <div class="explorer-card">
+            <!-- パンくずリスト -->
+            <div id="explorer-breadcrumbs" class="explorer-breadcrumbs"></div>
+
+            <!-- 現在の質問ノード or 葉ノード -->
+            <div id="explorer-card-area"></div>
+          </div>
+
+          <!-- 候補ポケモン一覧セクション -->
+          <div class="candidates-section">
+            <div class="cand-header">
+              <span class="cand-title">絞り込み候補ポケモン</span>
+              <span id="candidates-count-badge" class="step-num-badge">1025 匹</span>
+            </div>
+            <div id="candidates-grid" class="cand-grid"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="viewer-footer">
+      <p class="footer-license">
+        ポケットモンスター・ポケモン・Pokémonは任天堂・クリーチャーズ・ゲームフリークの登録商標です。<br>
+        本サービスはファンメイド作品であり、任天堂・株式会社ポケモンとは一切関係ありません。<br>
+        データは <a href="https://pokeapi.co/" target="_blank" rel="noopener">PokéAPI</a> を利用しています。
+      </p>
+    </footer>
+  </div>
+
+  <!-- 決定木データ読み込み -->
+  <script src="../data/tree.js?v=20261121_1"></script>
+  <!-- ツリービューアJS -->
+  <script src="tree-viewer.js?v=20261121_1"></script>
+</body>
+
+</html>

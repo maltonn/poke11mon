@@ -27,7 +27,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20261121_3">
+  <link rel="stylesheet" href="style.css?v=20261121_4">
 </head>
 
 <body>
@@ -164,6 +164,8 @@
             <div id="feedback-sent-msg" class="feedback-thanks" style="display:none;">
               <span>教えてくれてありがとうございます！次は当てられるように頑張ります！💪</span>
             </div>
+            <!-- 答え合わせ：質問ツリー表示エリア -->
+            <div id="actual-tree-container" class="actual-tree-container" style="display: none;"></div>
             <div class="restart-wrapper">
               <button id="btn-restart-from-wrong" class="btn btn-primary btn-outline">
                 <span>もう一度あそぶ</span>
@@ -198,9 +200,9 @@
   </div>
 
   <!-- 決定木データ読み込み -->
-  <script src="data/tree.js?v=20261121_3"></script>
+  <script src="data/tree.js?v=20261121_4"></script>
   <!-- アプリ本体JS -->
-  <script src="app.js?v=20261121_3"></script>
+  <script src="app.js?v=20261121_4"></script>
 </body>
 
 </html>

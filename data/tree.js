@@ -66,7 +66,7 @@ window.TREE_DATA = {
                 "type": "question",
                 "depth": 7,
                 "question_id": "vibe_famous",
-                "question_text": "アニメやグッズ等でよく見かける「超有名枠」ですか？",
+                "question_text": "アニメやグッズ等でよく見かける「有名枠」ですか？",
                 "tier": 2,
                 "category": "雰囲気・キャラ性",
                 "candidates_count": 7,

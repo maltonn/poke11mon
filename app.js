@@ -51,6 +51,7 @@
   const formActualPokemon = document.getElementById('form-actual-pokemon');
   const inputActualPokemon = document.getElementById('input-actual-pokemon');
   const feedbackSentMsg = document.getElementById('feedback-sent-msg');
+  const actualTreeContainer = document.getElementById('actual-tree-container');
   const pokemonListDatalist = document.getElementById('pokemon-list-datalist');
   const btnToggleHistory = document.getElementById('btn-toggle-history');
   const historyContent = document.getElementById('history-content');
@@ -235,6 +236,10 @@
     feedbackCorrectView.style.display = 'none';
     feedbackWrongView.style.display = 'none';
     feedbackSentMsg.style.display = 'none';
+    if (actualTreeContainer) {
+      actualTreeContainer.style.display = 'none';
+      actualTreeContainer.innerHTML = '';
+    }
     formActualPokemon.reset();
     formActualPokemon.style.display = 'flex';
     historyContent.style.display = 'none';
@@ -322,18 +327,273 @@
 
   function submitActualPokemon(e) {
     e.preventDefault();
-    const actual = inputActualPokemon.value.trim();
-    if (!actual) return;
+    const rawActual = inputActualPokemon.value.trim();
+    if (!rawActual) return;
 
     const guessedName = resultPokemonName.textContent;
     sendLog('feedback_actual_pokemon', {
       guessed: guessedName,
-      actual: actual,
+      actual: rawActual,
       questions_count: historyStack.length,
     });
 
     formActualPokemon.style.display = 'none';
     feedbackSentMsg.style.display = 'block';
+
+    // 答え合わせ：質問ツリーを表示
+    renderActualPokemonComparison(rawActual);
+  }
+
+  function toKatakana(str) {
+    return str.replace(/[\u3041-\u3096]/g, (match) => {
+      const chr = match.charCodeAt(0) + 0x60;
+      return String.fromCharCode(chr);
+    }).trim();
+  }
+
+  function findPathToPokemon(node, targetName, currentPath = []) {
+    if (!node) return null;
+    if (node.type === 'leaf') {
+      if (node.pokemon && node.pokemon.name_ja === targetName) {
+        return { path: currentPath, pokemon: node.pokemon };
+      }
+      return null;
+    }
+
+    if (node.yes) {
+      const res = findPathToPokemon(node.yes, targetName, [
+        ...currentPath,
+        { node: node, expectedAnswer: 'yes' }
+      ]);
+      if (res) return res;
+    }
+
+    if (node.no) {
+      const res = findPathToPokemon(node.no, targetName, [
+        ...currentPath,
+        { node: node, expectedAnswer: 'no' }
+      ]);
+      if (res) return res;
+    }
+
+    return null;
+  }
+
+  function renderActualPokemonComparison(rawInput) {
+    if (!actualTreeContainer) return;
+    actualTreeContainer.innerHTML = '';
+
+    // 表記揺れ（カタカナ変換・部分一致探索）
+    const normalized = toKatakana(rawInput);
+    let matchedName = allPokemonNames.find((n) => n === normalized);
+    if (!matchedName) {
+      matchedName = allPokemonNames.find((n) => n.toLowerCase() === rawInput.toLowerCase());
+    }
+    if (!matchedName) {
+      matchedName = allPokemonNames.find((n) => n.includes(normalized));
+    }
+
+    const targetName = matchedName || rawInput;
+    const result = findPathToPokemon(treeData, targetName);
+
+    if (!result) {
+      actualTreeContainer.style.display = 'block';
+      actualTreeContainer.innerHTML = `
+        <div class="actual-tree-card">
+          <div class="actual-tree-header">
+            <h3 class="actual-tree-title">⚠️ 「${escapeHtml(rawInput)}」のデータが見つかりませんでした</h3>
+            <p class="actual-tree-desc">名前が正しいか確認してください（全1,025匹のポケモンに対応しています）。</p>
+          </div>
+        </div>
+      `;
+      return;
+    }
+
+    const targetPokemon = result.pokemon;
+    const path = result.path;
+
+    // プレイヤーの履歴（historyStack）と比較
+    let firstDivergeIndex = -1;
+    let diverged = false;
+
+    const stepComparisons = path.map((step, idx) => {
+      let userStep = null;
+      let status = 'unreached'; // match | diverge | unreached
+
+      if (!diverged && idx < historyStack.length) {
+        userStep = historyStack[idx];
+        // ノードが一致している場合
+        if (userStep.node && (userStep.node.node_id === step.node.node_id || userStep.node.question_text === step.node.question_text)) {
+          if (userStep.answer === step.expectedAnswer) {
+            status = 'match';
+          } else {
+            status = 'diverge';
+            diverged = true;
+            if (firstDivergeIndex === -1) {
+              firstDivergeIndex = idx;
+            }
+          }
+        } else {
+          // ノードが一致しない場合はすでに分岐後
+          diverged = true;
+          if (firstDivergeIndex === -1) {
+            firstDivergeIndex = idx;
+          }
+        }
+      }
+
+      return {
+        stepIndex: idx + 1,
+        node: step.node,
+        expectedAnswer: step.expectedAnswer,
+        userAnswer: userStep ? userStep.answer : null,
+        status: status,
+      };
+    });
+
+    // HTML構築
+    const cardEl = document.createElement('div');
+    cardEl.className = 'actual-tree-card';
+
+    // ヘッダー部
+    let noticeHtml = '';
+    if (firstDivergeIndex !== -1) {
+      noticeHtml = `
+        <div class="actual-tree-diverge-notice">
+          ⚡ <strong>Q${firstDivergeIndex + 1}</strong> で本来と異なる回答をしたため、別のポケモンへ分岐しました！
+        </div>
+      `;
+    } else if (historyStack.length === path.length) {
+      noticeHtml = `
+        <div class="actual-tree-diverge-notice no-diverge">
+          ✨ すべての質問の回答が一致していました！
+        </div>
+      `;
+    }
+
+    const headerHtml = `
+      <div class="actual-tree-header">
+        <h3 class="actual-tree-title">
+          <span>🎯</span>
+          <span>答え合わせ：「${escapeHtml(targetPokemon.name_ja)}」への道順</span>
+        </h3>
+        <p class="actual-tree-desc">
+          「${escapeHtml(targetPokemon.name_ja)}」にたどり着くための本来の質問ルート（全${path.length}問）と、あなたの回答の比較です。
+        </p>
+        ${noticeHtml}
+      </div>
+    `;
+
+    // ステップ一覧部
+    let stepsHtml = '<div class="actual-tree-steps">';
+    stepComparisons.forEach((item) => {
+      const expYes = item.expectedAnswer === 'yes';
+      const expBadge = `<span class="history-badge ${expYes ? 'yes' : 'no'}">${expYes ? 'はい' : 'いいえ'}</span>`;
+
+      let statusTag = '';
+      let userAnsHtml = '';
+      let stepClass = 'actual-tree-step';
+
+      if (item.status === 'match') {
+        stepClass += ' step-match';
+        statusTag = '<span class="step-status-tag tag-match">⭕ 一致</span>';
+        const userYes = item.userAnswer === 'yes';
+        userAnsHtml = `
+          <div class="answer-item">
+            <span class="answer-label">あなたの回答：</span>
+            <span class="history-badge ${userYes ? 'yes' : 'no'}">${userYes ? 'はい' : 'いいえ'}</span>
+          </div>
+        `;
+      } else if (item.status === 'diverge') {
+        stepClass += ' step-diverge';
+        statusTag = '<span class="step-status-tag tag-diverge">❌ ここで分岐！</span>';
+        const userYes = item.userAnswer === 'yes';
+        userAnsHtml = `
+          <div class="answer-item">
+            <span class="answer-label">あなたの回答：</span>
+            <span class="history-badge ${userYes ? 'yes' : 'no'}">${userYes ? 'はい' : 'いいえ'}</span>
+          </div>
+        `;
+      } else {
+        stepClass += ' step-unreached';
+        statusTag = '<span class="step-status-tag tag-unreached">正解ルート</span>';
+        userAnsHtml = `
+          <div class="answer-item">
+            <span class="answer-label" style="opacity: 0.7;">（分岐後のため未出題）</span>
+          </div>
+        `;
+      }
+
+      const categoryBadge = item.node.category
+        ? `<span class="step-category-badge">${escapeHtml(item.node.category)}</span>`
+        : '';
+
+      stepsHtml += `
+        <div class="${stepClass}">
+          <div class="step-meta-row">
+            <div style="display: flex; align-items: center; gap: 6px;">
+              <span class="step-num-badge">Q${item.stepIndex}</span>
+              ${categoryBadge}
+            </div>
+            ${statusTag}
+          </div>
+          <p class="step-question-text">${escapeHtml(item.node.question_text || '')}</p>
+          <div class="step-answers-row">
+            <div class="answer-item">
+              <span class="answer-label">正解：</span>
+              ${expBadge}
+            </div>
+            ${userAnsHtml}
+          </div>
+        </div>
+      `;
+    });
+    stepsHtml += '</div>';
+
+    // ゴール部
+    const paddedId = targetPokemon.id ? String(targetPokemon.id).padStart(4, '0') : '';
+    let typesHtml = '';
+    if (targetPokemon.type1 && targetPokemon.type1 !== 'None') {
+      typesHtml += `<span class="type-pill type-${targetPokemon.type1}">${targetPokemon.type1}</span>`;
+    }
+    if (targetPokemon.type2 && targetPokemon.type2 !== 'None') {
+      typesHtml += `<span class="type-pill type-${targetPokemon.type2}">${targetPokemon.type2}</span>`;
+    }
+
+    const zukanLinkHtml = paddedId
+      ? `<a href="https://zukan.pokemon.co.jp/detail/${paddedId}" target="_blank" rel="noopener noreferrer" class="btn-zukan-link" style="margin-top: 6px;">
+           <span>📖 公式ポケモンずかんで見る ↗</span>
+         </a>`
+      : '';
+
+    const goalHtml = `
+      <div class="actual-tree-goal">
+        <span class="goal-label">🏁 目指していたポケモン</span>
+        ${paddedId ? `<span class="pokemon-id-badge">No.${paddedId}</span>` : ''}
+        <h4 class="goal-pokemon-name">${escapeHtml(targetPokemon.name_ja)}</h4>
+        <div class="pokemon-types" style="margin-bottom: 4px;">
+          ${typesHtml}
+        </div>
+        ${zukanLinkHtml}
+      </div>
+    `;
+
+    cardEl.innerHTML = headerHtml + stepsHtml + goalHtml;
+    actualTreeContainer.appendChild(cardEl);
+    actualTreeContainer.style.display = 'block';
+
+    // スムーズスクロールで答え合わせツリーへ誘導
+    actualTreeContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function escapeHtml(str) {
+    if (!str) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
   }
 
   function shareResult() {
